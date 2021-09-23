@@ -6,24 +6,54 @@
 }
 body{
     height: 100vh;
-    min-width: 1440px;
+    color: white;
+    font-family: montserrat;
 }
 /************************************
  main***************************************** */
 main{
     display: flex;
+    height: 87vh;
 }
- /* debugclass */
- .debug main{
-     height: 87vh;
-     background-color: blueviolet;
- }
- .debug #play_bar{
-     height: 13vh;
+/* menu opzioni e playlist */
+#side_bar{
+    width: 15vw;
+    background-color: black;
+}
+.menu{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.menu img{
+    width: 70%;
+    margin: 1rem;
+}
+.menu svg{
+    width: 2rem;
+}
+.menu span{
+    vertical-align: super;
+}
+#side_bar .menu .home a{
+    color: white;
+}
+/* interfaccia con brani */
+#content{
+    width: 100%;
+    background-color:#141922 ;
+    overflow: auto;
+}
+/*****************************
+ footer******************* */
+#play_bar{
+    height: 13vh;
      width: 100%;
-     background-color: black;
- }
- .debug #side_bar{
-     width: 15vw;
-     background-color: cadetblue;
- }
+     background-color: #282828;
+}
+/* utility */
+
+a{
+    text-decoration: none;
+    color: #5A5A5A;
+}
