@@ -6,20 +6,19 @@
 }
 body{
     height: 100vh;
-    color: white;
     font-family: montserrat;
+    min-width: 1440px;
 }
 /************************************
  main***************************************** */
 main{
-    display: flex;
-    height: 87vh;
+    height: 90vh;
 }
 /* impostazione sidebar */
 #side_bar{
     display: flex;
     flex-flow: column wrap;
-    width: 15vw;
+    width: 20vw;
     background-color: black;
     justify-content: space-between;
 }
@@ -27,7 +26,7 @@ main{
 .menu img{
     width: 60%;
     margin: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .menu svg{
     width: 1.5rem;
@@ -37,8 +36,8 @@ main{
 }
 .home,.search,.librery,.playlist,.user{
     padding-left: 1rem;
-    font-size: 10px;
-    line-height: 1.3rem;
+    font-size: 15px;
+    line-height: 2rem;
 }
 #side_bar .menu .home a{
     color: white;
@@ -51,24 +50,24 @@ main{
 }
 /* playlist */
 .playlist h1{
-    font-size: .7rem;
+    font-size: 1rem;
     margin: .5rem 0;
     
 }
 .playlist .fa-plus-square{
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     color: #A3A3A3;
     margin-right: .6rem;
 }
 .playlist .add span{
-    font-size: 14px;
+    font-size: 16px;
 }
 .playlist .list a{
     display: block;
 }
 /* sezione con immagine utente e nome */
 .user svg{
-    width: 13px;
+    width: 22px;
 }
 .user hr{
     margin-right: 1rem;
@@ -92,10 +91,25 @@ main{
     background-color:#141922 ;
     overflow: auto;
 }
+.upgrade{
+    justify-content: end;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.774);
+    position: fixed;
+    width:calc(100% - 20vh);
+    height: 5.5rem;
+}
+#content .upgrade>div{
+    margin-right: 2rem;
+    border: 1px solid;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+}
+
 /*****************************
  footer******************* */
 #play_bar{
-     height: 13vh;
+     height: 10vh;
      width: 100%;
      background-color: #282828;
      position: fixed;
@@ -105,4 +119,10 @@ main{
 a{
     text-decoration: none;
     color: #5A5A5A;
+}
+.flex{
+    display: flex;
+}
+body,#content .upgrade a{
+    color: white;
 }
