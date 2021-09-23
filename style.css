@@ -128,9 +128,18 @@ main{
 .recently_list{
     justify-content: space-around;
     margin-left: 9px;
+    text-align: center;
 }
 .recently_list img{
     width: 11.5rem;
+}
+.recently_list h3{
+    margin: 1rem 0;
+}
+
+.recently_list div:nth-child(2) h3{
+    width: 11rem;
+    margin: 1rem auto;
 }
 /*****************************
  footer******************* */
@@ -142,7 +151,7 @@ main{
 }
 /* utility */
 
-a{
+a,.recently_list h5{
     text-decoration: none;
     color: #5A5A5A;
 }
