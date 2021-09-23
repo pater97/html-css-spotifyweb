@@ -91,6 +91,7 @@ main{
     background-color:#141922 ;
     overflow: auto;
 }
+/* barra .upgrade */
 .upgrade{
     justify-content: end;
     align-items: center;
@@ -104,8 +105,22 @@ main{
     border: 1px solid;
     padding: 1rem 2rem;
     border-radius: 3rem;
+    font-size: .7rem;
 }
-
+/* scelte genere */
+.choices{
+    justify-content: center;
+    margin-top: 7rem;
+}
+.choices div hr{
+    width: 2rem;
+    margin: 5px auto;
+    border-color: #9AE22D;
+}
+.choices a{
+    color: #7D7F84;
+    margin: 0 .7rem;
+}
 /*****************************
  footer******************* */
 #play_bar{
