@@ -122,6 +122,7 @@ main{
     margin: 0 .7rem;
 }
 /* lista canzoni con copertine */
+/* sezione riprodotti di recente */
 .music_selection h2{
     margin: 2rem 1rem;
 }
@@ -130,16 +131,28 @@ main{
     margin-left: 9px;
     text-align: center;
 }
-.recently_list img{
+.recently_list img,.make_for_you img{
     width: 11.5rem;
 }
 .recently_list h3{
     margin: 1rem 0;
 }
-
 .recently_list div:nth-child(2) h3{
     width: 11rem;
     margin: 1rem auto;
+}
+/* sezione "creato per te" */
+.music_selection h4{
+    margin: -1rem 1rem;
+}
+.make_for_you div{
+    margin: 2rem 1rem;
+}
+.make_for_you{
+    text-align: center;
+}
+.make_for_you h3{
+    margin-top: 10px;
 }
 /*****************************
  footer******************* */
@@ -151,7 +164,7 @@ main{
 }
 /* utility */
 
-a,.recently_list h5{
+a,.music_selection h5,.music_selection h4{
     text-decoration: none;
     color: #5A5A5A;
 }
