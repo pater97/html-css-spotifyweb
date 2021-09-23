@@ -121,6 +121,17 @@ main{
     color: #7D7F84;
     margin: 0 .7rem;
 }
+/* lista canzoni con copertine */
+.music_selection h2{
+    margin: 2rem 1rem;
+}
+.recently_list{
+    justify-content: space-around;
+    margin-left: 9px;
+}
+.recently_list img{
+    width: 11.5rem;
+}
 /*****************************
  footer******************* */
 #play_bar{
