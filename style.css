@@ -15,28 +15,55 @@ main{
     display: flex;
     height: 87vh;
 }
-/* menu opzioni e playlist */
+/* impostazione sidebar */
 #side_bar{
-    width: 15vw;
-    background-color: black;
-}
-.menu{
     display: flex;
     flex-flow: column wrap;
+    width: 15vw;
+    background-color: black;
     justify-content: space-between;
 }
+/* menu opzioni */
 .menu img{
     width: 70%;
     margin: 1rem;
+    margin-bottom: 2rem;
 }
-.menu svg{
+.menu svg,.user svg{
     width: 2rem;
 }
 .menu span{
-    vertical-align: super;
+    vertical-align: text-bottom;
+}
+.home,.search,.librery,.playlist{
+    padding-left: 1rem;
+    font-size: .8rem;
+    line-height: 2rem;
 }
 #side_bar .menu .home a{
     color: white;
+}
+.search svg,.librery svg,.user svg{
+    filter: brightness(0.5)
+}
+.home{
+    border-left: 2px solid #9AE22D;
+}
+/* playlist */
+.playlist h1{
+    font-size: .9rem;
+    margin-top: 1.5rem;
+}
+.playlist .fa-plus-square{
+    font-size: 2.3rem;
+    color: #A3A3A3;
+    margin-right: .6rem;
+}
+.playlist .add span{
+    font-size: 1rem;
+}
+.playlist .list a{
+    display: block;
 }
 /* interfaccia con brani */
 #content{
@@ -47,9 +74,10 @@ main{
 /*****************************
  footer******************* */
 #play_bar{
-    height: 13vh;
+     height: 13vh;
      width: 100%;
      background-color: #282828;
+     position: fixed;
 }
 /* utility */
 
