@@ -1,8 +1,29 @@
+/* general */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: aqua;
+    height: 100vh;
+    min-width: 1440px;
 }
+/************************************
+ main***************************************** */
+main{
+    display: flex;
+}
+ /* debugclass */
+ .debug main{
+     height: 87vh;
+     background-color: blueviolet;
+ }
+ .debug #play_bar{
+     height: 13vh;
+     width: 100%;
+     background-color: black;
+ }
+ .debug #side_bar{
+     width: 15vw;
+     background-color: cadetblue;
+ }
