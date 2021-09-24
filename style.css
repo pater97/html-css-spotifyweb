@@ -98,6 +98,7 @@ main{
     position: fixed;
     width:calc(100% - 230px);
     height: 5.5rem;
+    z-index: 10;
 }
 #content .upgrade>div{
     margin-right: 2rem;
@@ -155,9 +156,6 @@ main{
 .make_for_you h3{
     margin-top: 10px;
 }
-.make_for_you div:last-child img{
-    margin-left: -1rem;
-}
 /* artisti popolar */
 .popular_artist img{
     border-radius: 50%;
@@ -176,6 +174,7 @@ footer{
      width: 100%;
      background-color: #282828;
      position: fixed;
+     z-index: 100;
 }
 #play_bar{
     justify-content: space-between;
@@ -218,7 +217,7 @@ footer{
     margin-top: 1rem;
 }
 .container_play_time{
-    height: 2px;
+    height: 5px;
     background-color:#5A5A5A ;
     width: 427px;
     margin: 0 2rem;
@@ -230,7 +229,7 @@ footer{
     height: 100%;
 }
 .container_play_time .circle{
-    top: -.5rem;
+    top: -.35rem;
     left: 7rem;
 }
 /* right side */
@@ -239,7 +238,7 @@ footer{
 }
 .container_regola_audio{
     width:8rem;
-    height: 2px;
+    height: 5px;
     background-color: #5A5A5A;
     margin-right: 1rem;
 }
@@ -253,7 +252,6 @@ footer{
     right: 100px;
 }
 /* utility */
-
 a,.music_selection h5,.music_selection h4,#play_bar .left h4,#play_bar .left .icon i{
     text-decoration: none;
     color: #5A5A5A;
@@ -272,11 +270,18 @@ body,#content .upgrade a{
     background-color: white;
     display: none;
 }
-/* effettistica */
-a:hover{
-    color: white
-
+#content .hidden_play{
+    position: absolute;
+    font-size: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
 }
+.recently_list article,.make_for_you article{
+    position: relative;
+}
+/* effettistica */
 .upgrade div:hover,.top_bar .fa-play-circle:hover{
     transform: scale(120%);
 }
@@ -284,5 +289,20 @@ a:hover{
     background-color:#9AE22D ;
 }
 .container_regola_audio:hover .circle,.container_play_time:hover .circle{
+    display: inline-block;
+}
+.container_regola_audio:hover,.container_play_time:hover,.song_title h2:hover,#play_bar .song_title h4:hover,#play_bar .icon i:hover{
+    cursor: pointer;
+}
+a:hover,.song_title h2:hover,#play_bar .song_title h4:hover,#play_bar .icon i:hover,.add:hover .fa-plus-square{
+    color: white;
+}
+.song_title h2:hover,#play_bar .song_title h4:hover{
+    text-decoration: underline;
+}
+article img:hover{
+    filter: brightness(.5);
+}
+#content article:hover .hidden_play{
     display: inline-block;
 }
