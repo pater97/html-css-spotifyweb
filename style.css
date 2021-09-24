@@ -7,7 +7,6 @@
 body{
     height: 100vh;
     font-family: montserrat;
-    min-width: 1440px;
 }
 /************************************
  main***************************************** */
@@ -130,6 +129,7 @@ main{
     justify-content: space-around;
     margin-left: 9px;
     text-align: center;
+    flex-wrap: wrap;
 }
 .recently_list img,.make_for_you img,.popular_artist img{
     width: 11.5rem;
@@ -222,11 +222,16 @@ footer{
     background-color:#5A5A5A ;
     width: 427px;
     margin: 0 2rem;
+    position: relative;
 }
 .play_time{
     width: 7rem;
     background: white;
     height: 100%;
+}
+.container_play_time .circle{
+    top: -.5rem;
+    left: 7rem;
 }
 /* right side */
 #play_bar .right i{
@@ -243,6 +248,10 @@ footer{
     background-color: white;
     height: 100%;
 }
+.container_regola_audio .circle{
+    top: 2.4rem;
+    right: 100px;
+}
 /* utility */
 
 a,.music_selection h5,.music_selection h4,#play_bar .left h4,#play_bar .left .icon i{
@@ -254,4 +263,26 @@ a,.music_selection h5,.music_selection h4,#play_bar .left h4,#play_bar .left .ic
 }
 body,#content .upgrade a{
     color: white;
+}
+.circle{
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+}
+/* effettistica */
+a:hover{
+    color: white
+
+}
+.upgrade div:hover,.top_bar .fa-play-circle:hover{
+    transform: scale(120%);
+}
+.container_regola_audio:hover .regola_audio,.container_play_time:hover .play_time{
+    background-color:#9AE22D ;
+}
+.container_regola_audio:hover .circle,.container_play_time:hover .circle{
+    display: inline-block;
 }
