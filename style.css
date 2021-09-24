@@ -18,7 +18,7 @@ main{
 #side_bar{
     display: flex;
     flex-flow: column wrap;
-    width: 20vw;
+    width: 230px;
     background-color: black;
     justify-content: space-between;
 }
@@ -131,7 +131,7 @@ main{
     margin-left: 9px;
     text-align: center;
 }
-.recently_list img,.make_for_you img{
+.recently_list img,.make_for_you img,.popular_artist img{
     width: 11.5rem;
 }
 .recently_list h3{
@@ -150,9 +150,18 @@ main{
 }
 .make_for_you{
     text-align: center;
+    margin-bottom: -1.5rem;
 }
 .make_for_you h3{
     margin-top: 10px;
+}
+.make_for_you div:last-child img{
+    margin-left: -1rem;
+}
+/* artisti popolar */
+.popular_artist img{
+    border-radius: 50%;
+    margin: 3rem 1rem;
 }
 /*****************************
  footer******************* */
