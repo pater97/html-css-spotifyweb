@@ -97,7 +97,7 @@ main{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.774);
     position: fixed;
-    width:calc(100% - 20vh);
+    width:calc(100% - 230px);
     height: 5.5rem;
 }
 #content .upgrade>div{
@@ -161,19 +161,91 @@ main{
 /* artisti popolar */
 .popular_artist img{
     border-radius: 50%;
-    margin: 3rem 1rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.popular_artist{
+    text-align: center;
+    padding: 1rem 0;
 }
 /*****************************
  footer******************* */
-#play_bar{
+footer{
      height: 92px;
      width: 100%;
      background-color: #282828;
      position: fixed;
 }
+#play_bar{
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+/* left_side */
+
+#play_bar .left .cover img{
+    width: 65px;
+    margin: 0 10px;
+}
+#play_bar .left .song_title,#play_bar .left .icon,#play_bar .right{
+    align-items: center;
+}
+#play_bar .left .song_title{
+    margin-left: 10px;
+    margin-right: 50px;
+}
+#play_bar .left .icon i{
+    margin: 0 10px;
+}
+#play_bar .left h2{
+    font-size: 20px;
+}
+#play_bar .left h4{
+    font-size: 16px;
+}
+/* central side */
+#play_bar .central{
+    flex-direction: column;
+    align-items: center;
+}
+.top_bar i{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+}
+.bottom_bar{
+    align-items: center;
+    margin-top: 1rem;
+}
+.container_play_time{
+    height: 2px;
+    background-color:#5A5A5A ;
+    width: 427px;
+    margin: 0 2rem;
+}
+.play_time{
+    width: 7rem;
+    background: white;
+    height: 100%;
+}
+/* right side */
+#play_bar .right i{
+    margin: 0 10px;
+}
+.container_regola_audio{
+    width:8rem;
+    height: 2px;
+    background-color: #5A5A5A;
+    margin-right: 1rem;
+}
+.regola_audio{
+    width: 2rem;
+    background-color: white;
+    height: 100%;
+}
 /* utility */
 
-a,.music_selection h5,.music_selection h4{
+a,.music_selection h5,.music_selection h4,#play_bar .left h4,#play_bar .left .icon i{
     text-decoration: none;
     color: #5A5A5A;
 }
