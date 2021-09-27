@@ -27,6 +27,9 @@ main{
     margin: 1rem;
     margin-bottom: 2rem;
 }
+.logo img:last-child{
+    display: none;
+}
 .menu svg{
     width: 1.5rem;
 }
@@ -130,7 +133,7 @@ main{
 .choices{
     justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     margin: 7rem auto;
     margin-bottom: 0;
 }
@@ -157,8 +160,8 @@ main{
 .recently_list>div{
     width: calc(100%/6);
 }
-.recently_list img,.make_for_you img,.popular_artist img{
-    width: 11.5rem;
+.recently_list img{
+    width: 90%;
 }
 .recently_list h3{
     margin: 1rem 0;
@@ -170,6 +173,9 @@ main{
 /* sezione "creato per te" */
 .music_selection h4{
     margin: -1rem 1rem;
+}
+.make_for_you img,.popular_artist img{
+    width: 11.5rem;
 }
 .make_for_you div{
     margin: 2rem 1rem;
@@ -206,6 +212,10 @@ footer{
     align-items: center;
     height: 100%;
 }
+#play_bar>div{
+    width: calc(100%/3);
+}
+
 /* left_side */
 
 #play_bar .left .cover img{
@@ -223,15 +233,23 @@ footer{
     margin: 0 10px;
 }
 #play_bar .left h2{
-    font-size: 17px;
+    font-size: 90%;
 }
 #play_bar .left h4{
-    font-size: 14px;
+    font-size: 80%;
 }
 /* central side */
 #play_bar .central{
     flex-direction: column;
     align-items: center;
+}
+.contenuto_central{
+    width: 100%;
+}
+.top_bar{
+    justify-content: center;
+    width: 70%;
+    margin: auto;
 }
 .top_bar i{
     font-size: 1.5rem;
@@ -249,18 +267,23 @@ footer{
     position: relative;
 }
 .play_time{
-    width: 5rem;
+    width: 30%;
     background: white;
     height: 100%;
 }
 .container_play_time .circle{
     top: -.35rem;
-    left: 5rem;
+    left: 30%;
 }
 .bottom_bar h4{
-    font-size: .9rem;
+    font-size: 13px;
 }
 /* right side */
+.contenuto_right{
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
 #play_bar .right i{
     margin: 0 10px;
 }
@@ -269,15 +292,16 @@ footer{
     height: 3px;
     background-color: #5A5A5A;
     margin-right: 1rem;
+    position: relative;
 }
 .regola_audio{
-    width: 2rem;
+    width: 25%;
     background-color: white;
     height: 100%;
 }
 .container_regola_audio .circle{
-    top: 2.4rem;
-    right: 100px;
+    top: -7px;
+    left: 25%;
 }
 /* utility */
 a,.music_selection h5,.music_selection h4,#play_bar .left h4,#play_bar .left .icon i{
@@ -339,9 +363,17 @@ article img:hover{
 @media screen and ( max-width :1024px){
     .recently_list>div{
         width: calc(100%/4);
+        margin-bottom: 1rem;
     }
     .choices a{
         width: calc(100%/5);
+        margin-bottom: 2rem;
+    }
+    #play_bar>div{
+        width: calc(100%/3);
+    }
+    .container_play_time{
+        margin: 0 5px;
     }
 }
 @media screen and ( max-width :768px){
@@ -350,6 +382,68 @@ article img:hover{
     }
     .choices a{
         width: calc(100%/3);
+    }
+    .make_for_you img,.popular_artist img{
+        width: 90%;
+    }
+    #play_bar>div{
+        width: calc(100%/3);
+    }
+    .icon{
+        flex-direction: column;
+    }
+    #play_bar .left .icon .fa-heart{
         margin-bottom: 1rem;
+    }
+    .contenuto_right, .contenuto_left{
+        width: 80%;
+    }
+    #play_bar .left .song_title {
+        margin-right: 13px;
+    }
+    .contenuto_right{
+        margin-left: auto;
+    }
+}
+@media screen and ( max-width :600px){
+    #side_bar{
+        width: 50px;
+    }
+    #side_bar .logo img:first-child,#side_bar .user a,#side_bar .user h3,#side_bar .user hr,#side_bar .menu span,#side_bar .playlist{
+        display: none;
+    }
+    #side_bar .logo img:last-child{
+        display: inline-block;
+        width: 70%;
+        margin: 15px 5px;
+    }
+    .home, .search, .librery,.user{
+        padding-left: 5px;
+        border: none;
+    }
+    .menu svg, .user svg{
+        width: 75%;
+    }
+    .user .download svg{
+        width: 50%;
+        margin-left: 4px;
+
+    }
+    .choices a{
+        width: calc(100%/4);
+        font-size: .8rem;
+        font-weight: bold;
+    }
+    .upgrade{
+        width: calc(100% - 50px);
+    }
+    #play_bar .left .song_title{
+        margin: 0 2px;
+    }
+    #play_bar .right i{
+        margin: 0 3px;
+    }
+    .top_bar i{
+        margin: 0 10px;
     }
 }
