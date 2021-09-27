@@ -15,15 +15,15 @@ main{
 }
 /* impostazione sidebar */
 #side_bar{
-    display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     width: 230px;
+    height: 100%;
     background-color: black;
-    justify-content: space-between;
+    overflow: hidden;
 }
 /* menu opzioni */
-.menu img{
-    width: 60%;
+.logo img{
+    width: 80%;
     margin: 1rem;
     margin-bottom: 2rem;
 }
@@ -48,6 +48,25 @@ main{
     border-left: 2px solid #9AE22D;
 }
 /* playlist */
+.playlist{
+    overflow: hidden;
+    height: 100%;
+}
+.create{
+    height: 85px;
+    align-items: center;
+}
+.create i{
+    vertical-align: middle;
+}
+.playlist>.list {
+    overflow-y: auto;
+    height: calc(100% - 85px);
+  }
+  .user{
+      min-height: 100px;
+      margin-top: auto;
+  }
 .playlist h1{
     font-size: 1rem;
     margin: .5rem 0;
@@ -111,6 +130,7 @@ main{
 .choices{
     justify-content: center;
     margin-top: 7rem;
+    flex-wrap: wrap;
 }
 .choices div hr{
     width: 2rem;
@@ -184,7 +204,7 @@ footer{
 /* left_side */
 
 #play_bar .left .cover img{
-    width: 65px;
+    width: 55px;
     margin: 0 10px;
 }
 #play_bar .left .song_title,#play_bar .left .icon,#play_bar .right{
@@ -198,10 +218,10 @@ footer{
     margin: 0 10px;
 }
 #play_bar .left h2{
-    font-size: 20px;
+    font-size: 17px;
 }
 #play_bar .left h4{
-    font-size: 16px;
+    font-size: 14px;
 }
 /* central side */
 #play_bar .central{
@@ -209,7 +229,7 @@ footer{
     align-items: center;
 }
 .top_bar i{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin: 0 1rem;
 }
 .bottom_bar{
@@ -217,20 +237,23 @@ footer{
     margin-top: 1rem;
 }
 .container_play_time{
-    height: 5px;
+    height: 3px;
     background-color:#5A5A5A ;
-    width: 427px;
+    width: 380px;
     margin: 0 2rem;
     position: relative;
 }
 .play_time{
-    width: 7rem;
+    width: 5rem;
     background: white;
     height: 100%;
 }
 .container_play_time .circle{
     top: -.35rem;
-    left: 7rem;
+    left: 5rem;
+}
+.bottom_bar h4{
+    font-size: .9rem;
 }
 /* right side */
 #play_bar .right i{
@@ -238,7 +261,7 @@ footer{
 }
 .container_regola_audio{
     width:8rem;
-    height: 5px;
+    height: 3px;
     background-color: #5A5A5A;
     margin-right: 1rem;
 }
