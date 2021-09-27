@@ -129,8 +129,10 @@ main{
 /* scelte genere */
 .choices{
     justify-content: center;
-    margin-top: 7rem;
     flex-wrap: wrap;
+    width: 80%;
+    margin: 7rem auto;
+    margin-bottom: 0;
 }
 .choices div hr{
     width: 2rem;
@@ -139,7 +141,8 @@ main{
 }
 .choices a{
     color: #7D7F84;
-    margin: 0 .7rem;
+    text-align: center;
+    width: calc(100%/6);
 }
 /* lista canzoni con copertine */
 /* sezione riprodotti di recente */
@@ -147,10 +150,12 @@ main{
     margin: 2rem 1rem;
 }
 .recently_list{
-    justify-content: space-around;
-    margin-left: 9px;
+    margin-left: 1rem;
     text-align: center;
     flex-wrap: wrap;
+}
+.recently_list>div{
+    width: calc(100%/6);
 }
 .recently_list img,.make_for_you img,.popular_artist img{
     width: 11.5rem;
@@ -328,4 +333,23 @@ article img:hover{
 }
 #content article:hover .hidden_play{
     display: inline-block;
+}
+/* mediaquery ***************************/
+
+@media screen and ( max-width :1024px){
+    .recently_list>div{
+        width: calc(100%/4);
+    }
+    .choices a{
+        width: calc(100%/5);
+    }
+}
+@media screen and ( max-width :768px){
+    .recently_list>div{
+        width: calc(100%/2);
+    }
+    .choices a{
+        width: calc(100%/3);
+        margin-bottom: 1rem;
+    }
 }
